@@ -1,14 +1,4 @@
-/*
-	例程：IAP15程序模板 -- 矩阵按键状态机 + 数码管扫描
-	作者：电子设计工坊
-	重点：	1.用STC-ISP生成1ms的定时器中断，用于扫描按键、数码管等；
-			2.用状态机来实现按键扫描；一个好的按键程序，必须有：（1）消抖；（2）按键状态的判断，包括判断按键按下，判断按键弹起；（3）不阻塞程序，不用delay消抖
-				所以三行按键程序和状态机程序都是非常好的。
-			3.有些变量是static静态类型，同学们要仔细体会。
-			
-	Copyright (c) 2020 电子设计工坊 dianshe.taobao.com
-	All rights reserved
-*/
+
 #include "STC15F2K60S2.h"	 //STC15系列的头文件，添加方法参考视频：https://www.bilibili.com/video/av95391542/
 
 #define	u8	unsigned char
